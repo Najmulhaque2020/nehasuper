@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{margin: 0; padding: 0; box-sizing: border-box;}
+/*
+
+    Primary color : Yellow #f9eb04, Green #1b9b0a,
+*/
+
+/*---------------- Typography color----------------*/
+.primary_bg {
+    background: #333 !important;
+}
+/*---------------- Typography ----------------*/
+a{
+    text-decoration: none;
+    color: #000;
+}
+li{
+    list-style-type: none;
+}
+ul {
+    padding: 0;
+    margin: 0;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.primary_btn {
+    background: transparent;
+    border: 1px solid #f9eb04;
+    color: #000 !important;
+    padding: 8px 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: capitalize; 
+    border-radius: 6px;
+    transition: all .3s linear;
+}
+.primary_btn:hover {
+    background: #f9eb04;
+}
+.title {
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 4.5rem;
+}
+.title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 100%;
+    height: 3px;
+    background-color: #f9eb04;    
+}
+.title::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -23px;
+    margin: auto;
+    width: 40px;
+    height: 9px;
+    border-radius: 10px;
+    transform: translateX(-50%);
+    z-index: 2;
+    background-color: #1b9b0a; 
+    opacity: 0.7;     
+    animation-name: title;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@keyframes title {
+    0%{
+        left: 15%;
+    }
+    25%{
+        left: 35%;
+    }
+    50%{
+        left: 65%;
+    }
+    75%{
+        left: 85%;
+    }
+    100%{
+        left: 15%;
+    }
+}
+
+/*---------------- Over right Typography ----------------*/
+.btn-outline-success {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-color: #fff;
+    transition: all .4s linear;
+}
+.btn-outline-success:hover {
+    color: #000;
+    background-color: #f9eb04;
+    border-color: #f9eb04;
+}
+.form-control:focus {
+    color: #000;
+    background-color: transparent;
+    border-color: transparent;
+    outline: 0;
+    box-shadow: none;
+}
+/*---------------- Header Section ----------------*/
+header {
+    background: url(img/nehasuper.jpg) ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+}
+
+/*---------------- Navigation Section ----------------*/
+.navbar {
+    background-color: rgba(0,0,0,0.4);
+}
+.navbar .navbar-brand img {
+    height: 40px;
+}
+.navbar .nav-link {
+    color: #fff !important;
+    margin: 0 20px;
+    font-weight: bold;
+    transition: all .4s linear;
+    position: relative;
+}
+.navbar .nav-link:hover {
+    color: #f9eb04 !important;
+    transform: scale(1.2);
+}
+.navbar .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 2px;
+    width: 0;
+    background-color: #f9eb04;
+    transition: all .4s linear;
+}
+.navbar .nav-link:hover:after {
+    width: 90%;
+}
+.navbar .form-control:focus {
+    color: #000;
+    background-color: #fff;
+    border-color: #f9eb04;
+    outline: 0;
+    box-shadow: none;
+}
+.navbar form .form-control {
+    width: max-content;
+}
+/*---------------- header content section ----------------*/
+#header_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    display: inline-block;
+    transform: translate(-50%, -50%);
+}
+#header_content h1 {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: 0.8;
+    font-size: calc(8vh + 10px);
+}
+/*---------------- product ‍Section ----------------*/
+.card-title {
+    margin-bottom: 20px;
+}
+#product .container {
+    padding-top: 50px;
+    border-bottom: 1px solid #f9eb04;
+}
+/*---------------- Footer Section ----------------*/
+footer {
+    color: #fff;
+}
+footer p {
+    font-size: 14px;
+    line-height: 2em;
+}
+footer a {
+    color: #1b9b0a;
+    transition: all .3s linear;
+}
+footer p {
+    margin: 0;
+}
+/*---------------- Up Footer Section ----------------*/
+.up_footer {
+    padding: 50px 0;
+    border-bottom: 1px solid #f9eb04;
+    background: #272727;
+}
+.up_footer .footer_logo {
+    height: 70px;
+    margin-bottom: 50px;
+    display: block;
+}
+.up_footer h5 {
+    margin-bottom: 40px;
+    color: #fff;
+}
+.up_footer .link-list li a {
+    color: #1b9b0a;
+    font-size: 14px;
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(249, 235, 4,0.5);
+    opacity: 0.7;    
+    transition: all .4s linear;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+.up_footer .link-list li a:hover {
+    opacity: 1;
+    border-bottom: 1px solid rgb(249, 235, 4,1);
+}
+.up_footer .footer-socials {
+    display: flex;
+    flex-wrap: wrap;
+}
+.up_footer .footer-socials li {
+    width: 33.33%;
+    text-align: center;
+    color: #1b9b0a;
+    padding: 10px;  
+}
+.up_footer .footer-socials li i {
+    font-size: 40px;
+    color: #f9eb04;
+    opacity: 1;
+}
+.up_footer .footer-socials li p {
+    font-size: 12px;
+}
+.up_footer .title::before {
+    width: 30px;
+}
+/*---------------- Down Footer Section ----------------*/
+.down_footer {
+    background-color: #222;
+}
+footer .down_footer a:hover {
+    color: #f9eb04 !important;
+}
+/*---------------- About Us ----------------*/
+#about {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+.about_content img {
+    padding: 10px;
+}
+.about_content p {
+    padding: 10px;
+}
+/*---------------- Typography ----------------*/
+/*---------------- Typography ----------------*/
