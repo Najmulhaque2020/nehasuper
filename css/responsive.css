@@ -1,0 +1,12 @@
+@media (max-width: 576px) {
+    .navbar form {
+        display: inline-block !important;
+    }
+    .navbar form .form-control {
+        width: 250px;
+    }
+    .navbar form .btn-outline-success {
+        width: auto;
+        margin-top: 15px;
+    }
+}
